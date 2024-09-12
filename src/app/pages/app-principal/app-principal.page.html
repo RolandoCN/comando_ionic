@@ -16,7 +16,7 @@
   <ion-toolbar>
     <ion-title>Listado de Usuarios</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="addUser()">Agregar Usuario</ion-button>
+      <ion-button (click)="addUser()"><ion-icon name="add" slot="icon-only"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
 
@@ -26,9 +26,9 @@
         {{ user.id }} - {{ user.usuario }}
       </ion-label>
       <ion-buttons slot="end">
-        <ion-button (click)="editUser(user.id)">Editar</ion-button>
-        <ion-button color="danger" (click)="deleteUser(user.id)">Eliminar</ion-button>
-        <ion-button (click)="viewUser(user.id)">Ver</ion-button>
+        <ion-button (click)="editUser(user.id)"> <ion-icon name="create" slot="icon-only"></ion-icon></ion-button>
+        <ion-button color="danger" (click)="deleteUser(user.id)"><ion-icon name="trash" slot="icon-only"></ion-icon></ion-button>
+        <ion-button (click)="viewUser(user.id)"><ion-icon name="eye" slot="icon-only"></ion-icon></ion-button>
       </ion-buttons>
     </ion-item>
   </ion-list>
