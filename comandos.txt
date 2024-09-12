@@ -1,0 +1,1 @@
+ionic start app blank --type=angular

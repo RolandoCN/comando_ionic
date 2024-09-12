@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle del Ítem</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/app-principal"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngIf="detalle">
+    <ion-card-header>
+      <ion-card-title>{{ detalle.usuario }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ detalle.contrasenia }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <ion-spinner *ngIf="detalle.length === 0"></ion-spinner> Muestra un spinner mientras se carga -->
+</ion-content>
